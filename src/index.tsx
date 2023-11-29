@@ -5,6 +5,8 @@ import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 import App from './App'
+import { GlobalStyles } from "./theme/globalStyles";
+import Theme from "./theme";
 
 const container = document.getElementById('root')
 const root = createRoot(container)
@@ -33,7 +35,10 @@ root.render(
     <React.StrictMode>
         <QueryClientProvider client={queryClient}>
             <Router>
-                <App />
+                  <Theme>
+                    <GlobalStyles />
+                      <App />
+                   </Theme>
             </Router>
             <RenderDevTool />
         </QueryClientProvider>
