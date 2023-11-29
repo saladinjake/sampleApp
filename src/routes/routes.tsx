@@ -9,29 +9,52 @@ import {
     matchPath,
 } from 'react-router-dom'
 
+
+import Layout from "layout/LayoutOne";
+
 import { useQuery } from '@tanstack/react-query'
 
 const ALLOW_PRIVILEGE_OVERRIDE = false
+const LandingPage =  lazy(() => import('modules/SampleModule'))
 
 const queryKeys = {
     getPages: 'get_pages',
 }
 
+
+const LayoutRoute = () => {
+
+  return (
+    <Layout>
+      <Outlet />
+    </Layout>
+  ) 
+};
+
+
+
+
 function DefaultLayout() {
     let modules = [
         {
-            path: '/sample',
-            component: lazy(() => import('modules/SampleModule/index')),
+            path: '/',
+            component: lazy(() => import('modules/SampleModule')),
         },
     ]
     const routes = modules?.map((route, i) => (
-        <Route key={i} path={route.path} element={<route.component />} />
+        <Route key={i} path={route.path}  element={<route.component />} />
     ))
 
-    return <Routes>
-            <Route path="/" index element={<>bEGIN HERE</>} />
-           {routes}
-    </Routes>
+    return   (
+<Routes>
+        <Route element={<LayoutRoute />}>
+         <Route  path={"/"} index element={<LandingPage/>} />
+          
+         </Route> 
+</Routes>
+          )
+
+   
 }
 
 export default DefaultLayout
