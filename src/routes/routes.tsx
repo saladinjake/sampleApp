@@ -20,7 +20,7 @@ const queryKeys = {
 function DefaultLayout() {
     let modules = [
         {
-            path: '/',
+            path: '/sample',
             component: lazy(() => import('modules/SampleModule/index')),
         },
     ]
@@ -28,7 +28,10 @@ function DefaultLayout() {
         <Route key={i} path={route.path} element={<route.component />} />
     ))
 
-    return <Routes>{routes}</Routes>
+    return <Routes>
+            <Route path="/" index element={<>bEGIN HERE</>} />
+           {routes}
+    </Routes>
 }
 
 export default DefaultLayout
