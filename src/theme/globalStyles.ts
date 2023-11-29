@@ -8,16 +8,16 @@ html {
 
   body {
     font-family: "Mulish";
-    min-height: 100vh;
+
   }
 
   #root {
-    min-height: 100vh;
+
   }
 
   #root > div {
-    height: 100vh;
-    overflow: hidden;
+
+
   }
 
   *, *::before, *::after {
@@ -33,21 +33,19 @@ html {
     width: 10px;
   }
 
-  
+
   &::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
 
-  
+
   &::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
   }
 
- 
+
   &::-webkit-scrollbar-thumb:hover {
     background: #555;
   } */
 `;
-
-
