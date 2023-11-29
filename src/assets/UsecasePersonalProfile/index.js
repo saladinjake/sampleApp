@@ -1,0 +1,1 @@
+export { UsecasePersonalProfile } from "./UsecasePersonalProfile";

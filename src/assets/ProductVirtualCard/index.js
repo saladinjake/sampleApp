@@ -1,0 +1,1 @@
+export { ProductVirtualCard } from "./ProductVirtualCard";

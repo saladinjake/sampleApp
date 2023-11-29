@@ -1,0 +1,1 @@
+export { VuesaxLinearSearchNormal } from "./VuesaxLinearSearchNormal";
