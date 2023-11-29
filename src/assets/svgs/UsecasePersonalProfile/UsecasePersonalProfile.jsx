@@ -34,5 +34,5 @@ export const UsecasePersonalProfile = ({ className }) => {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 };

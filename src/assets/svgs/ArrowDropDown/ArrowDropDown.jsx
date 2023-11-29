@@ -1,5 +1,5 @@
 /*
-We're constantly improving the code you see. 
+We're constantly improving the code you see.
 Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
 */
 
@@ -20,7 +20,7 @@ export const ArrowDropDown = ({ className }) => {
         height="24"
         id="mask0_1_609"
         maskUnits="userSpaceOnUse"
-        style="mask-type:alpha"
+            style={{maskType: "alpha"}}
         width="24"
         x="0"
         y="0"
@@ -31,5 +31,5 @@ export const ArrowDropDown = ({ className }) => {
         <path className="path" d="M12 14.3L8.2 10.5H15.8L12 14.3Z" fill="#131316" />
       </g>
     </svg>
-  );
+  )
 };

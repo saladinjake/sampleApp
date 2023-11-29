@@ -20,7 +20,7 @@ export const Menu4 = ({ className }) => {
         height="24"
         id="mask0_4571_1257"
         maskUnits="userSpaceOnUse"
-        style="mask-type:alpha"
+        style={{maskType: "alpha"}}
         width="24"
         x="0"
         y="0"
@@ -35,5 +35,5 @@ export const Menu4 = ({ className }) => {
         />
       </g>
     </svg>
-  );
+  )
 };

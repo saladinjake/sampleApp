@@ -264,7 +264,7 @@ export function generateMedia(breakpoints = defaultBreakpoints) {
       return acc;
     },
     { to: {}, from: {} }
-  );
+  )
 
   return Object.assign(
     {
@@ -280,7 +280,7 @@ export function generateMedia(breakpoints = defaultBreakpoints) {
       between,
     },
     oldStyle,
-  );
+  )
 }
 
 export const mediaGenerator = generateMedia();

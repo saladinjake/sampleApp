@@ -20,7 +20,7 @@ export const CallReceived2 = ({ className }) => {
         height="21"
         id="mask0_4571_245"
         maskUnits="userSpaceOnUse"
-        style="mask-type:alpha"
+       
         width="21"
         x="0"
         y="0"
@@ -35,5 +35,5 @@ export const CallReceived2 = ({ className }) => {
         />
       </g>
     </svg>
-  );
+  )
 };

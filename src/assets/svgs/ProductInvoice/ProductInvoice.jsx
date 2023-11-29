@@ -75,7 +75,7 @@ export const ProductInvoice = ({
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 };
 
 ProductInvoice.propTypes = {

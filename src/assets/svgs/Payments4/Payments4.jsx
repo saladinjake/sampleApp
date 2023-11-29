@@ -20,7 +20,7 @@ export const Payments4 = ({ className }) => {
         height="24"
         id="mask0_1_621"
         maskUnits="userSpaceOnUse"
-        style="mask-type:alpha"
+        style={{maskType: "alpha"}}
         width="24"
         x="0"
         y="0"
@@ -35,5 +35,5 @@ export const Payments4 = ({ className }) => {
         />
       </g>
     </svg>
-  );
+  )
 };

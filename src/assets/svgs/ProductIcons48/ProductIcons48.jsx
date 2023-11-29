@@ -165,7 +165,7 @@ export const ProductIcons48 = ({
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 };
 
 ProductIcons48.propTypes = {

@@ -69,5 +69,5 @@ export const ProductVirtualCard = ({ className }) => {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 };

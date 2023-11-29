@@ -33,5 +33,5 @@ export const VuesaxLinearSearchNormal = ({ className }) => {
       />
       <g className="g" opacity="0" />
     </svg>
-  );
+  )
 };

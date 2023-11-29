@@ -20,7 +20,7 @@ export const ArrowBack = ({ className }) => {
         height="20"
         id="mask0_1_10"
         maskUnits="userSpaceOnUse"
-        style="mask-type:alpha"
+ 
         width="20"
         x="0"
         y="0"
@@ -35,5 +35,5 @@ export const ArrowBack = ({ className }) => {
         />
       </g>
     </svg>
-  );
+  )
 };

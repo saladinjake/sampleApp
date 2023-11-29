@@ -86,5 +86,5 @@ export const ProductPaymentLink = ({ className }) => {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 };

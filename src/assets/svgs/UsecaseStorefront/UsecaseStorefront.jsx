@@ -30,5 +30,5 @@ export const UsecaseStorefront = ({ className }) => {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 };

@@ -79,7 +79,7 @@ export const ProductIcons3 = ({
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 };
 
 ProductIcons3.propTypes = {

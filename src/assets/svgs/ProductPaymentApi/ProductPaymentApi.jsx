@@ -73,5 +73,5 @@ export const ProductPaymentApi = ({ className }) => {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 };

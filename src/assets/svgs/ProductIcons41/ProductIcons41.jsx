@@ -69,5 +69,5 @@ export const ProductIcons41 = ({ className }) => {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 };

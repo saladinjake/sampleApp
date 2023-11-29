@@ -1,5 +1,5 @@
 /*
-We're constantly improving the code you see. 
+We're constantly improving the code you see.
 Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
 */
 
@@ -20,7 +20,7 @@ export const CallMade = ({ className }) => {
         height="24"
         id="mask0_1_148"
         maskUnits="userSpaceOnUse"
-        style="mask-type:alpha"
+            style={{maskType: "alpha"}}
         width="24"
         x="0"
         y="0"
@@ -31,5 +31,5 @@ export const CallMade = ({ className }) => {
         <path className="path" d="M5.4 19.3L4.7 18.6L16.8 6.5H9.5V5.5H18.5V14.5H17.5V7.2L5.4 19.3Z" fill="#000004" />
       </g>
     </svg>
-  );
+  )
 };

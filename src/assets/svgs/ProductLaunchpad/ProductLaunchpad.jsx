@@ -199,5 +199,5 @@ export const ProductLaunchpad = ({ className }) => {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 };

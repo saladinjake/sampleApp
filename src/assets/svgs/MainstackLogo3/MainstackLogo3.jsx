@@ -41,5 +41,5 @@ export const MainstackLogo3 = ({ className }) => {
         fill="#131316"
       />
     </svg>
-  );
+  )
 };

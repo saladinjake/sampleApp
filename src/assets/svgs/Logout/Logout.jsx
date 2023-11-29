@@ -20,7 +20,7 @@ export const Logout = ({ className }) => {
         height="20"
         id="mask0_1_551"
         maskUnits="userSpaceOnUse"
-        style="mask-type:alpha"
+        style={{maskType: "alpha"}}
         width="20"
         x="0"
         y="0"
@@ -35,5 +35,5 @@ export const Logout = ({ className }) => {
         />
       </g>
     </svg>
-  );
+  )
 };

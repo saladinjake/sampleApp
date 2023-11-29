@@ -9638,17 +9638,17 @@ klona@^2.0.4, klona@^2.0.5:
   resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/klona/-/klona-2.0.5.tgz"
   integrity sha1-0WZXTZAHY5XZljqnqSj6u412r7w=
 
-kuda-component-library-dev@^1.0.56:
+SampleApp-component-library-dev@^1.0.56:
   version "1.0.56"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/kuda-component-library-dev/-/kuda-component-library-dev-1.0.56.tgz#4081b15c2003730913a1ab5d49776833f59c82a7"
+  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/SampleApp-component-library-dev/-/SampleApp-component-library-dev-1.0.56.tgz#4081b15c2003730913a1ab5d49776833f59c82a7"
   integrity sha1-QIGxXCADcwkToatdSXdoM/Wcgqc=
   dependencies:
     "@rollup/plugin-json" "^6.0.0"
     "@tanstack/react-table" "^8.9.8"
 
-kuda-component-library@^1.0.6:
+SampleApp-component-library@^1.0.6:
   version "1.0.6"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/kuda-component-library/-/kuda-component-library-1.0.6.tgz"
+  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/SampleApp-component-library/-/SampleApp-component-library-1.0.6.tgz"
   integrity sha1-IEd8AkCYzYYf9nbX5Hx/yiM4OuQ=
 
 language-subtag-registry@~0.3.2:

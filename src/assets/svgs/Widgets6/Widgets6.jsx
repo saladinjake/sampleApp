@@ -20,7 +20,7 @@ export const Widgets6 = ({ className }) => {
         height="20"
         id="mask0_4571_1219"
         maskUnits="userSpaceOnUse"
-        style="mask-type:alpha"
+       
         width="20"
         x="0"
         y="0"
@@ -35,5 +35,5 @@ export const Widgets6 = ({ className }) => {
         />
       </g>
     </svg>
-  );
+  )
 };

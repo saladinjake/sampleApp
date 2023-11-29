@@ -75,7 +75,7 @@ export const ProductIcons32 = ({
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 };
 
 ProductIcons32.propTypes = {

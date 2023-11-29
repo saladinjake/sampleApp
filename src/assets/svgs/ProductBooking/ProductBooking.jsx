@@ -69,5 +69,5 @@ export const ProductBooking = ({ className }) => {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 };

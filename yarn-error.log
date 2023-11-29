@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add kuda-component-library-dev
+  /usr/local/bin/node /usr/local/bin/yarn add SampleApp-component-library-dev
 
 PATH: 
   /opt/homebrew/opt/php@7.2/sbin:/opt/homebrew/opt/php@7.2/bin:/opt/homebrew/opt/php@8.0/sbin:/opt/homebrew/opt/php@8.0/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/opt/php@7.2/sbin:/opt/homebrew/opt/php@7.2/bin:/opt/homebrew/opt/php@8.0/sbin:/opt/homebrew/opt/php@8.0/bin:/usr/local/sbin
@@ -14,14 +14,14 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/kuda-component-library-dev: ETIMEDOUT
+  Error: https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/SampleApp-component-library-dev: ETIMEDOUT
       at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:141550:19)
       at listOnTimeout (node:internal/timers:559:17)
       at processTimers (node:internal/timers:502:7)
 
 npm manifest: 
   {
-    "name": "kuda.nervefrontend",
+    "name": "SampleApp.nervefrontend",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -44,8 +44,8 @@ npm manifest:
       "env-cmd": "^10.1.0",
       "js-excel-date-convert": "^1.0.2",
       "jwt-decode": "^3.1.2",
-      "kuda-component-library": "^1.0.0",
-      "kuda-component-library-dev": "^1.0.32",
+      "SampleApp-component-library": "^1.0.0",
+      "SampleApp-component-library-dev": "^1.0.32",
       "moment": "^2.29.4",
       "postcss": "^8.4.18",
       "postcss-loader": "^7.0.1",
@@ -9754,17 +9754,17 @@ Lockfile:
     resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/klona/-/klona-2.0.5.tgz"
     integrity sha1-0WZXTZAHY5XZljqnqSj6u412r7w=
   
-  kuda-component-library-dev@^1.0.32:
+  SampleApp-component-library-dev@^1.0.32:
     version "1.0.32"
-    resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/kuda-component-library-dev/-/kuda-component-library-dev-1.0.32.tgz#c06283efe556b8703b27b67bdaa20b1952ea342b"
+    resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/SampleApp-component-library-dev/-/SampleApp-component-library-dev-1.0.32.tgz#c06283efe556b8703b27b67bdaa20b1952ea342b"
     integrity sha1-wGKD7+VWuHA7J7Z72qILGVLqNCs=
     dependencies:
       "@rollup/plugin-json" "^6.0.0"
       "@tanstack/react-table" "^8.9.8"
   
-  kuda-component-library@^1.0.0:
+  SampleApp-component-library@^1.0.0:
     version "1.0.6"
-    resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/kuda-component-library/-/kuda-component-library-1.0.6.tgz#20477c024098cd861ff676d7e47c7fca23383ae4"
+    resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/SampleApp-component-library/-/SampleApp-component-library-1.0.6.tgz#20477c024098cd861ff676d7e47c7fca23383ae4"
     integrity sha1-IEd8AkCYzYYf9nbX5Hx/yiM4OuQ=
   
   language-subtag-registry@~0.3.2:

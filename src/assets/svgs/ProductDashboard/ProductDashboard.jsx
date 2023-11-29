@@ -86,5 +86,5 @@ export const ProductDashboard = ({ className }) => {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 };

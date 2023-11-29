@@ -20,7 +20,7 @@ export const Widgets4 = ({ className }) => {
         height="20"
         id="mask0_1_600"
         maskUnits="userSpaceOnUse"
-        style="mask-type:alpha"
+        style={{maskType: "alpha"}}
         width="20"
         x="0"
         y="0"
@@ -35,5 +35,5 @@ export const Widgets4 = ({ className }) => {
         />
       </g>
     </svg>
-  );
+  )
 };
