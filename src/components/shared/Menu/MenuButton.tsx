@@ -3,6 +3,7 @@ import { useMenu } from "./Menu";
 interface IProps {
   setShowMenu?: any;
   children: any;
+  className?: string
 }
 
 const MenuButton = (props: IProps) => {
@@ -13,6 +14,7 @@ const MenuButton = (props: IProps) => {
 
   return (
     <button
+    className={`menu-4 ${props?.className}`}
       type="button"
       style={{
         border: "1px solid",
