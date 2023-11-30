@@ -63,6 +63,28 @@ export default SideBar
 
 
 const StyledFloatingSideBar = styled.div`
+.app-bar {
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: var(--app-bar);
+  display: inline-flex;
+  gap: 4px;
+  left: 16px;
+  padding: 4px;
+  position: fixed;
+  top: 310px;
+  border:1px solid #fafafa;
+    -moz-box-shadow: 0 0 3px  0px 2px 2px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: 0 0 3px 0px 2px 2px rgba(0, 0, 0, 0.1);
+box-shadow: 0 0 3px 0px 2px 2px rgba(0, 0, 0, 0.1);
+border: 2px solid #fafafa;
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.app-bar-list-instance {
+  flex: 0 0 auto !important;
+}
   .app-bar-list {
     align-items: flex-start;
     border-radius: 100px;
