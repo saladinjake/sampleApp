@@ -10,6 +10,10 @@ import {
   generateUUID
 } from "utils"
 
+import MediaQuery, {
+  screenDeviceManager,
+  MediaScreens,
+} from "theme/responsive";
 
 
 const Container = styled(Flex)`
@@ -21,6 +25,10 @@ const StyledBox = styled(Box)`
   border: 1px solid rgba(219, 220, 224, 0.5);
   box-shadow: 15px 30px 40px rgba(64, 25, 109, 0.07);
   border-radius: 5px;
+
+  ${MediaQuery.between("mobileSmall", "tablets")`
+       margin-left: -20px;
+ `};
 `;
 
 const CaretDown = () => {
@@ -41,7 +49,7 @@ const SelectButton = (props) => {
       onClick={onClick}
       gap="0 18px"
     >
-    
+
 
       <CaretDown />
     </Container>

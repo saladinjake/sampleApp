@@ -100,13 +100,7 @@ ${MediaQuery.between("laptopSmall", "retinaMaxWidth")`
 }
 
  .text-wrapper-11 {
-     color: var(--colors-gray-gray-400);
-     font-family: var(--degular-subtitle-6x-small-font-family);
-     font-size: var(--degular-subtitle-6x-small-font-size);
-     font-style: var(--degular-subtitle-6x-small-font-style);
-     font-weight: var(--degular-subtitle-6x-small-font-weight);
-     letter-spacing: var(--degular-subtitle-6x-small-letter-spacing);
-     line-height: var(--degular-subtitle-6x-small-line-height);
+
      margin-top: -1px;
      position: relative;
      text-align: center;
