@@ -14,6 +14,7 @@ import {Filters } from "./components/filter"
 import { TransactionLists } from "./components/transactions"
 import { BalanceComponent } from "./components/balace"
 import { DateValues } from "./components/datevalues"
+import { VerticalInfoGrids } from './components/verticalInfoGrids'
 export const Index = () => {
   return (
   	  <StyledWrapper>
@@ -27,39 +28,9 @@ export const Index = () => {
      </Box>
      <TransactionLists />
     <BalanceComponent />
-
-
     <DateValues />
-      <Box className="frame-11">
-        <Box className="frame-12">
-          <Box className="frame-13">
-            <Box className="text-wrapper-9">Ledger Balance</Box>
-              <Info1 className="icon-instance-node" />
-          </Box>
-          <Box className="text-wrapper-10">USD 0.00</Box>
-        </Box>
-        <Box className="frame-12">
-          <Box className="frame-13">
-            <Box className="text-wrapper-9">Total Payout</Box>
-              <Info2 className="icon-instance-node" />
-          </Box>
-          <Box className="text-wrapper-10">USD 55,080.00</Box>
-        </Box>
-        <Box className="frame-12">
-          <Box className="frame-13">
-            <Box className="text-wrapper-9">Total Revenue</Box>
-              <Info3 className="icon-instance-node" />
-          </Box>
-          <Box className="text-wrapper-10">USD 175,580.00</Box>
-        </Box>
-        <Box className="frame-12">
-          <Box className="frame-13">
-            <Box className="text-wrapper-9">Pending Payout</Box>
-              <Info4 className="icon-instance-node" />
-          </Box>
-          <Box className="text-wrapper-10">USD 0.00</Box>
-        </Box>
-      </Box>
+    <VerticalInfoGrids />
+
       {/*side bar*/}
       <SideBar />
 

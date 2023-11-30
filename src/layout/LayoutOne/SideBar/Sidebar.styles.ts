@@ -30,7 +30,14 @@ export const StyledFloatingSideBar = styled.div`
       box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
  `};
 
-
+ .frame-10 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
 
 }
 
