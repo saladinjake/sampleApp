@@ -2,7 +2,6 @@
   "name": "SampleApp",
   "version": "0.1.0",
   "private": true,
-  
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
@@ -45,16 +44,11 @@
   },
   "scripts": {
     "start": "PORT=3000 react-scripts start",
-
+    "start:windows": "SET PORT=3000 && react-scripts start",
     "storybook": "start-storybook -p 6006 -s public",
-    "start:dev": "react-scripts start",
-    "postinstall": "npm run build",
-
-    "pre-start": "react-scripts build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-
+    "build:development": "env-cmd -f .env.development npm run build",
+    "build:production": "env-cmd -f .env.production npm run build",
     "test": "react-scripts test  --transformIgnorePatterns 'node_modules/(?!(axios)/)'  -- -- config=jest.config.js",
     "eject": "react-scripts eject",
     "build-storybook": "build-storybook -s public",
