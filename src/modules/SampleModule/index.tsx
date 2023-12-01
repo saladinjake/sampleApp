@@ -16,9 +16,7 @@ import { VerticalInfoGrids } from './components/verticalInfoGrids'
 import {  AppProvisioner , useAppProvider, AppContext,  appReducer }  from "context/appContext"
 import {   getCachedData ,saveCachedData } from "utils"
 import {
-   getAllDataSample1,
-  getAllDataSample2,
-   getAllDataSample3,
+
    fetchSampleData3,
    fetchSampleData2,
    fetchSampleData1
@@ -28,7 +26,7 @@ const queryKeys = {
   GET_WALLET:"get_wallet",
   GET_TRANSACTION:"GET_TRANSACTION"
 }
-console.log(  getAllDataSample3())
+
 
 const initialState ={
   user: {
