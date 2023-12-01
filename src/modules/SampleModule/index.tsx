@@ -12,7 +12,7 @@ import { TransactionLists } from "./components/transactions"
 import { BalanceComponent } from "./components/balace"
 import { DateValues } from "./components/datevalues"
 import { VerticalInfoGrids } from './components/verticalInfoGrids'
-import { useQuery } from "@tanstack/react-query";
+
 import {  AppProvisioner , useAppProvider, AppContext,  appReducer }  from "context/appContext"
 import {   getCachedData ,saveCachedData } from "utils"
 import {

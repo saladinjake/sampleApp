@@ -12,7 +12,7 @@ import {
 
 import Layout from "layout/LayoutOne";
 
-import { useQuery } from '@tanstack/react-query'
+
 
 const ALLOW_PRIVILEGE_OVERRIDE = false
 const LandingPage =  lazy(() => import('modules/SampleModule'))
@@ -28,7 +28,7 @@ const LayoutRoute = () => {
     <Layout>
       <Outlet />
     </Layout>
-  ) 
+  )
 };
 
 
@@ -49,12 +49,12 @@ function DefaultLayout() {
 <Routes>
         <Route element={<LayoutRoute />}>
          <Route  path={"/"} index element={<LandingPage/>} />
-          
-         </Route> 
+
+         </Route>
 </Routes>
           )
 
-   
+
 }
 
 export default DefaultLayout
