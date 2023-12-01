@@ -2,7 +2,7 @@
   "name": "SampleApp",
   "version": "0.1.0",
   "private": true,
-   "main": "server.js",
+  
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
@@ -44,7 +44,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3000 react-scripts start",
 
     "storybook": "start-storybook -p 6006 -s public",
     "start:dev": "react-scripts start",
