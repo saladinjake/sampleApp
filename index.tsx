@@ -2,7 +2,7 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+
 
 import App from './App'
 
@@ -22,12 +22,7 @@ export const queryClient = new QueryClient({
 
 queryClient.invalidateQueries(['sample-do'])
 
-const RenderDevTool = () => {
-    if (process.env.NODE_ENV === 'development') {
-        return <ReactQueryDevtools initialIsOpen={false} />
-    }
-    return null
-}
+
 
 root.render(
     <React.StrictMode>
@@ -35,7 +30,7 @@ root.render(
             <Router>
                 <App />
             </Router>
-            <RenderDevTool />
+
         </QueryClientProvider>
     </React.StrictMode>
 )
