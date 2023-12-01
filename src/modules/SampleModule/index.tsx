@@ -15,7 +15,8 @@ import { useQuery } from "@tanstack/react-query";
 import {
    getAllDataSample1,
   getAllDataSample2,
-   getAllDataSample3
+   getAllDataSample3,
+   fetchSampleData3
 } from "api/services/SampleApi"
 const queryKeys = {
   get_user:"get_user",
@@ -29,9 +30,13 @@ export const Index = () => {
   const { data: transactionResponse, isLoading } = useQuery(
   [queryKeys.GET_TRANSACTION,],
   () =>
-    getAllDataSample3()
+    fetchSampleData3()
   );
-console.log(transactionResponse, ">>>>")
+console.log(transactionResponse, {
+    "first_name": "Olivier",
+    "last_name": "Jones",
+    "email": "olivierjones@gmail.com"
+})
 
 
   return (

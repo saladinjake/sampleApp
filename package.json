@@ -68,6 +68,7 @@
       }
     ]
   },
+  "proxy": "https://fe-task-api.mainstack.io",
   "browserslist": {
     "production": [
       ">0.2%",
