@@ -4,11 +4,12 @@ const deleteToken = () =>{
 	sessionStorage.clear()
 }
 
+const urlEnv ='https://fe-task-api.ainstack.io'
 const axiosInstance = axios.create({
-  baseURL: process.env.REACT_APP_NERVE_API_URL,
+  baseURL: urlEnv,
   headers: {
     "Content-Type": "application/json",
-    clientId: process.env.REACT_APP_CLIENT_ID,
+    clientId: "somerandom-id-generator",
   },
 });
 
@@ -16,7 +17,7 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(
   (config) => {
-   
+
 
     return config;
   },
