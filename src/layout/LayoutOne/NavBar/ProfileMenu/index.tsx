@@ -15,6 +15,7 @@ import MediaQuery, {
   MediaScreens,
 } from "theme/responsive";
 
+import {   useAppProvider }  from "context/appContext"
 
 const Container = styled(Flex)`
 
@@ -57,10 +58,12 @@ const SelectButton = (props) => {
 };
 
 
-const  Profile = () =>{
+const  Profile = (props ) =>{
+  const { user } = props  //useAppProvider();
+  const initials =  user?.first_name?.substring(0,1) + "" + user?.last_name?.substring(0,1)
   return (
     <StyledProfileWrapper>
-    <Box className="frame-15">
+    <Box className="frame-15a">
       <Box className="avi">
         <Box className="overlap-group">
           <Box className="avatar">
@@ -72,12 +75,12 @@ const  Profile = () =>{
           </Box>
           <Avatars2 className="avatars" />
           <Box className="ellipse" />
-          <Box className="text-wrapper-12">VJ</Box>
+          <Box className="text-wrapper-12">{initials}</Box>
         </Box>
       </Box>
 
 
-
+       <div className="resetPos">
           <Menu>
             <MenuButton>
               {(setShowMenu) => (
@@ -115,13 +118,27 @@ const  Profile = () =>{
               </StyledBox>
             </MenuItems>
           </Menu>
+          </div>
+
     </Box>
     </StyledProfileWrapper>
   )
 }
 export default Profile
 const StyledProfileWrapper = styled.div`
+.frame-15a {
+ align-items: center;
+ background-color: #eff1f6;
+ border-radius: 100px;
+ display: inline-flex;
+ flex: 0 0 auto;
+ gap: 8px;
+ padding: 4px 12px 4px 5px;
+ position: relative;
+ 
 
+
+}
  .avatar {
   background-color: var(--trashed-colorsgray100);
   border-radius: 16px;
@@ -146,6 +163,7 @@ const StyledProfileWrapper = styled.div`
   position: absolute !important;
   top: 0 !important;
   width: 32px !important;
+
 }
 
 .text-wrapper-12 {
@@ -180,6 +198,9 @@ const StyledProfileWrapper = styled.div`
   height: 32px;
   position: relative;
   width: 32px;
+
+
+
 }
 
 .overlap-group {

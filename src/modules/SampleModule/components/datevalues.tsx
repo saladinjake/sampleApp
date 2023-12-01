@@ -14,6 +14,7 @@ export const DateValues = () => {
         alt="Line"
         src=""
       />
+      <hr className="line-draw"/>
       <Box className="apr">Apr 1 ,&nbsp;&nbsp;2022</Box>
       <Box className="apr-2">Apr 30 ,&nbsp;&nbsp;2022</Box>
     </Box>
@@ -22,6 +23,14 @@ export const DateValues = () => {
 }
 
 const StyledWrapper = styled.span`
+.line-draw{
+  ${MediaQuery.between("laptopSmall", "retinaMaxWidth")`
+        color:#eaeaea;
+        width: 769px;
+        margin-left: 80px;
+        margin-top:-5px;
+  `};
+}
 .group-2 {
 
   ${MediaQuery.between("mobileSmall", "tablets")`

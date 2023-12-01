@@ -27,3 +27,27 @@ export const generateStatusColor = (payload: string) => {
   if (status === "failed" || status === "declined") return "#F7685B";
   return "";
 };
+
+
+export const getCachedData = () => {
+  let token = JSON.parse(localStorage.getItem("savedCached"));
+  if (token) {
+    return token;
+  }
+  return null;
+};
+
+
+export const saveCachedData = (key, value) => {
+  let token = JSON.parse(localStorage.getItem("savedCached"));
+  if(!token){
+    token = {
+      user: null,
+      wallet: null,
+      transactions: []
+    }
+  }
+  token[key] = value
+  localStorage.setItem("savedCached", JSON.stringify(token))
+
+};

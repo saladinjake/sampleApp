@@ -31,7 +31,7 @@ import Box from "components/shared/Box-v1"
 import Button from "components/shared/Button"
 import ProfileAvatar from "./ProfileMenu"
 import { StyledNavWrapper } from "./Nav.styles"
-const NavBar =  () =>{
+const NavBar =  ( props ) =>{
   return (
     <StyledNavWrapper>
   <Box className="top-bar">
@@ -58,6 +58,7 @@ const NavBar =  () =>{
           <Box className="text-wrapper-11">Apps</Box>
         </Box>
       </Box>
+
       <MainstackLogo className="mainstack-logo" />
       <Box className="frame-14">
         <Box className="small-tertiary">
@@ -73,7 +74,7 @@ const NavBar =  () =>{
           </Box>
         </Box>
         {/*profile icon*/}
-        <ProfileAvatar />
+        <ProfileAvatar user={props?.user} />
       </Box>
     </Box>
         </Box>

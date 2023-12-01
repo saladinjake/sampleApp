@@ -11,7 +11,8 @@ import { Info2 } from "assets/svgs/Info2";
 import { Info3 } from "assets/svgs/Info3";
 import { Info4 } from "assets/svgs/Info4";
 
-export const VerticalInfoGrids = () =>{
+export const VerticalInfoGrids = (props) =>{
+  const balance = props.wallet
   return (
     <VerticalGridWrapper>
     <Box className="frame-11">
@@ -20,28 +21,28 @@ export const VerticalInfoGrids = () =>{
           <Box className="text-wrapper-9">Ledger Balance</Box>
             <Info1 className="icon-instance-node" />
         </Box>
-        <Box className="text-wrapper-10">USD 0.00</Box>
+        <Box className="text-wrapper-10">USD {balance?.ledger_balance}</Box>
       </Box>
       <Box className="frame-12">
         <Box className="frame-13">
           <Box className="text-wrapper-9">Total Payout</Box>
             <Info2 className="icon-instance-node" />
         </Box>
-        <Box className="text-wrapper-10">USD 55,080.00</Box>
+        <Box className="text-wrapper-10">USD {balance?.total_payout}</Box>
       </Box>
       <Box className="frame-12">
         <Box className="frame-13">
           <Box className="text-wrapper-9">Total Revenue</Box>
             <Info3 className="icon-instance-node" />
         </Box>
-        <Box className="text-wrapper-10">USD 175,580.00</Box>
+        <Box className="text-wrapper-10">USD  {balance?.total_revenue}</Box>
       </Box>
       <Box className="frame-12">
         <Box className="frame-13">
           <Box className="text-wrapper-9">Pending Payout</Box>
             <Info4 className="icon-instance-node" />
         </Box>
-        <Box className="text-wrapper-10">USD 0.00</Box>
+        <Box className="text-wrapper-10">USD {balance?.total_payout}</Box>
       </Box>
     </Box>
     </VerticalGridWrapper>

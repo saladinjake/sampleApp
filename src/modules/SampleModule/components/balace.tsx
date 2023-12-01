@@ -5,14 +5,14 @@ import MediaQuery, {
 } from "theme/responsive";
 import Box from "components/shared/Box-v1"
 import styled from "styled-components"
-export const BalanceComponent =  () => {
+export const BalanceComponent =  ({availableBalance}) => {
   return(
     <BalanceWrapper>
     <Box className="overlap">
       <Box className="frame-9">
         <Box className="frame-10">
           <Box className="text-wrapper-6">Available Balance</Box>
-          <Box className="text-wrapper-7">USD 120,500.00</Box>
+          <Box className="text-wrapper-7">USD {availableBalance}</Box>
         </Box>
         <Box className="small-outline-button">
           <Box className="label-icon">

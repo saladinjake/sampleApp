@@ -27,28 +27,34 @@ import MediaQuery, {
   screenDeviceManager,
   MediaScreens,
 } from "theme/responsive";
+import {   useAppProvider }  from "context/appContext"
+import Flex from "components/shared/Flex-v1"
 
-export const TransactionLists = () =>{
-  const data  = [{},{},{}];
+
+export const TransactionLists = (props) =>{
+  const {transactions: data}  =  props  //useAppProvider()
   return (
+
     <Wrapper>
     <Box className="frame-4">
       {
-        data.map(record =>{
+        data?.map(record =>{
+
+
           return (
             <Box className="transaction-list">
               <Box className="call-received-wrapper">
                 <CallReceived2 className="icon-instance-node-2" />
               </Box>
               <Box className="frame-5">
-                <Box className="psychology-of-money">Psychology of Money</Box>
+                <Box className="psychology-of-money">{record?.metadata?.product_name}</Box>
                 <Box className="frame-6">
-                  <Box className="dominic-dan">Roy Cash</Box>
+                  <Box className="dominic-dan">{record?.metadata?.name}</Box>
                 </Box>
               </Box>
               <Box className="frame-7">
-                <Box className="text-wrapper-3">USD 600</Box>
-                <Box className="text-wrapper-4">Apr 03,2022</Box>
+                <Box className="text-wrapper-3">USD {record?.amount}</Box>
+                <Box className="text-wrapper-4">{record?.date}</Box>
               </Box>
             </Box>
           )
@@ -83,13 +89,14 @@ const Wrapper = styled.span`
          left: 190px;
          padding: 0px 0px 164px;
 
+
  `};
 
 
 }
 
  .transaction-list {
-  align-self: stretch;
+
   height: 49px;
   position: relative;
   width: 100%;
@@ -98,7 +105,10 @@ const Wrapper = styled.span`
   display: flex;
   justifyContent: between;
   flex-direction:row;
-  gap:30px;
+
+
+
+
 }
 
  .call-received-wrapper {
@@ -106,8 +116,18 @@ const Wrapper = styled.span`
   border-radius: 24px;
   height: 48px;
 
-
+  margin-right: 40px;
   width: 48px;
+
+  ${MediaQuery.between("mobileSmall", "tablets")`
+        margin-right: 58px;
+ `};
+
+ ${MediaQuery.between("laptopSmall", "retinaMaxWidth")`
+        margin-right: 88px;
+ `};
+
+
 }
 
  .icon-instance-node-2 {
@@ -124,7 +144,15 @@ const Wrapper = styled.span`
   flex-direction: column;
   height: 49px;
   justify-content: space-between;
-  width: 355px;
+
+
+  ${MediaQuery.between("mobileSmall", "tablets")`
+        width: 200px;
+ `};
+
+ ${MediaQuery.between("laptopSmall", "retinaMaxWidth")`
+         width: 455px;
+ `};
 
 
 }
@@ -143,8 +171,18 @@ const Wrapper = styled.span`
   align-items: flex-end;
   display: inline-flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 34px;
   justify-content: flex-end;
+
+
+
+  ${MediaQuery.between("mobileSmall", "tablets")`
+        display: none;
+ `};
+
+ ${MediaQuery.between("laptopSmall", "retinaMaxWidth")`
+          margin-left: 600px;
+ `};
 
 }
 
