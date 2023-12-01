@@ -4,12 +4,13 @@ const deleteToken = () =>{
 	sessionStorage.clear()
 }
 
-const urlEnv ='https://fe-task-api.ainstack.io'
+const urlEnv ='https://fe-task-api.mainstack.io'
 const axiosInstance = axios.create({
   baseURL: urlEnv,
+
   headers: {
-    "Content-Type": "application/json",
-    clientId: "somerandom-id-generator",
+    "Content-Type": "application/x-www-form-urlencoded",
+
   },
 });
 

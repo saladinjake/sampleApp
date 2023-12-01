@@ -21,7 +21,7 @@ export const getAllDataSample2 = () => {
 
 
 export const getAllDataSample3 = () => {
-  return getCall(endpoints.SAMPLE_URL_1, {}) as Promise<
+  return getCall(endpoints.SAMPLE_URL_3, {}) as Promise<
     AxiosResponse<IResponse & { data: any[] }>
   >;
 };

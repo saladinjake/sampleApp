@@ -20,10 +20,11 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "src"
+
+
   },
   "include": [
-    "src"
-   
-  ]
- 
+    "src",
+     "globals.d.ts"  
+]
 }

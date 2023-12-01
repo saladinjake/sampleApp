@@ -13,7 +13,7 @@ import {
 import { GlobalStyles } from "../../theme/globalStyles";
 import Theme from "../../theme";
 import { matcherfunction } from '@testing-library/react'
-import { AuthProvider } from "../../context/AuthContext";
+
 
 let queryClient = new QueryClient({
   defaultOptions: {
@@ -88,12 +88,12 @@ export const enhanceRenderWithContextProvider = (
   return {
     ...render(
       <Router>
-        <ContextProvider value={values}>
+      {/*<ContextProvider value={values}>*/ }
           <Theme>
             <GlobalStyles />
             {component}
           </Theme>
-        </ContextProvider>{" "}
+      {/*</ContextProvider>*/}
       </Router>
     ),
   };
@@ -115,7 +115,7 @@ export const fillForm = async (formPayload) => {
     let regexChecker = new RegExp("" + value + "");
     let type = formPayload[value]?.split("=");
     type = type[1];
-    
+
     switch (type) {
       case "input": {
         let nameTextBox = screen.getByRole("textbox", {
@@ -213,6 +213,3 @@ export const withmarkup = (query) => (text) =>
     )
     return hastext(node) && childrendonthavetext
   })
-
-
-  

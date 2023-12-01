@@ -13,6 +13,8 @@ export const postCall = async (url, data, params, headerConfig) => {
 export const getCall = async (url, params) => {
   const config = {
     headers: {
+      'Content-Type': 'application/json',
+      'clientId': '38960016-2ADD-40DB-891A-FC41B5F4E334'
     },
     ...params,
   };
