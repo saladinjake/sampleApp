@@ -50,7 +50,7 @@
     "build": "react-scripts build",
     "build:development": "env-cmd -f .env.development npm run build",
     "build:production": "env-cmd -f .env.production npm run build",
-    "test": "react-scripts test",
+     "test": "react-scripts test  --transformIgnorePatterns 'node_modules/(?!(axios)/)'  -- -- config=jest.config.js",
     "eject": "react-scripts eject",
     "build-storybook": "build-storybook -s public",
     "refreshVSToken": "vsts-npm-auth -config .npmrc"
