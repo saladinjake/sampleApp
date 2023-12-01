@@ -3011,47 +3011,6 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
-"@tanstack/match-sorter-utils@^8.1.1":
-  version "8.5.14"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/@tanstack/match-sorter-utils/-/match-sorter-utils-8.5.14.tgz"
-  integrity sha1-Eu/NU2q+SR0JUh4CQrxNUUQvioo=
-  dependencies:
-    remove-accents "0.4.2"
-
-"@tanstack/query-core@4.12.0":
-  version "4.12.0"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/@tanstack/query-core/-/query-core-4.12.0.tgz"
-  integrity sha1-Dpatz+GC78TqTCGAL3WW1Wxs1go=
-
-"@tanstack/react-query-devtools@^4.12.0":
-  version "4.12.0"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/@tanstack/react-query-devtools/-/react-query-devtools-4.12.0.tgz"
-  integrity sha1-GPNBGF8KVYD8iy2vgZc4kQi+cTE=
-  dependencies:
-    "@tanstack/match-sorter-utils" "^8.1.1"
-    superjson "^1.10.0"
-    use-sync-external-store "^1.2.0"
-
-"@tanstack/react-query@^4.12.0":
-  version "4.12.0"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/@tanstack/react-query/-/react-query-4.12.0.tgz"
-  integrity sha1-LLIz7xzPdTeu7WHKFx/D3MUtnFc=
-  dependencies:
-    "@tanstack/query-core" "4.12.0"
-    use-sync-external-store "^1.2.0"
-
-"@tanstack/react-table@^8.10.6":
-  version "8.10.6"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/@tanstack/react-table/-/react-table-8.10.6.tgz"
-  integrity sha1-qMA8wGrIkLzkQEc5uTVgWcQlndQ=
-  dependencies:
-    "@tanstack/table-core" "8.10.6"
-
-"@tanstack/table-core@8.10.6":
-  version "8.10.6"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/@tanstack/table-core/-/table-core-8.10.6.tgz"
-  integrity sha1-x50UXfw9yZR6KxzayCzU7Ezvgio=
-
 "@testing-library/dom@^8.0.0", "@testing-library/dom@^8.3.0":
   version "8.19.0"
   resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/@testing-library/dom/-/dom-8.19.0.tgz"
@@ -5587,13 +5546,6 @@ cookie@0.5.0:
   version "0.5.0"
   resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/cookie/-/cookie-0.5.0.tgz"
   integrity sha1-0fXXGt7GVYxY84mYfDZqpH6ZT4s=
-
-copy-anything@^3.0.2:
-  version "3.0.2"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/copy-anything/-/copy-anything-3.0.2.tgz"
-  integrity sha1-cYkXH/XhiTsih+i/V0uM1EjtULE=
-  dependencies:
-    is-what "^4.1.6"
 
 copy-concurrently@^1.0.0:
   version "1.0.5"
@@ -8680,11 +8632,6 @@ is-weakref@^1.0.2:
   integrity sha1-lSnzg6kzggXol2XgOS78LxAPBvI=
   dependencies:
     call-bind "^1.0.2"
-
-is-what@^4.1.6:
-  version "4.1.7"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/is-what/-/is-what-4.1.7.tgz"
-  integrity sha1-xB3B0tLWqShcYkwlBfYYScix+cw=
 
 is-whitespace-character@^1.0.0:
   version "1.0.4"
@@ -12416,11 +12363,6 @@ remark-squeeze-paragraphs@4.0.0:
   dependencies:
     mdast-squeeze-paragraphs "^4.0.0"
 
-remove-accents@0.4.2:
-  version "0.4.2"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/remove-accents/-/remove-accents-0.4.2.tgz"
-  integrity sha1-CkPTqq4egNuRngeuJUsoXZ4ce7U=
-
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz"
@@ -13479,13 +13421,6 @@ stylehacks@^5.1.0:
     browserslist "^4.16.6"
     postcss-selector-parser "^6.0.4"
 
-superjson@^1.10.0:
-  version "1.10.1"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/superjson/-/superjson-1.10.1.tgz"
-  integrity sha1-nHPpOTSJ3dq4nWOGlOrcv0vaLzY=
-  dependencies:
-    copy-anything "^3.0.2"
-
 supports-color@^5.3.0, supports-color@^5.5.0:
   version "5.5.0"
   resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/supports-color/-/supports-color-5.5.0.tgz"
@@ -14230,11 +14165,6 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
-
-use-sync-external-store@^1.2.0:
-  version "1.2.0"
-  resolved "https://pkgs.dev.azure.com/samantharoth23/787b2081-0549-4c58-8974-a6875051206d/_packaging/Nerve.Components/npm/registry/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz"
-  integrity sha1-fb79bvP+TnZ6DPXXKHqs+1hGkoo=
 
 use@^3.1.0:
   version "3.1.1"

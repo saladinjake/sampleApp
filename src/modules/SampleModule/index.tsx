@@ -6,7 +6,7 @@ import Box from "components/shared/Box-v1"
 import NavBar from "layout/LayoutOne/NavBar"
 import SideBar from "layout/LayoutOne/SideBar"
 import { StyledWrapper } from "./index.styles"
-import {  useReducer } from "react"
+import {  useReducer, useEffect , useState} from "react"
 import {Filters } from "./components/filter"
 import { TransactionLists } from "./components/transactions"
 import { BalanceComponent } from "./components/balace"
@@ -56,58 +56,54 @@ const initialState ={
 }
 export const Index = () => {
   const provider = useAppProvider();
+  const [users, setUser] = useState(null)
+    const [wallets, setWallets] = useState(null);
+      const [transactns, setTransactions] = useState(null)
 
    const [state, dispatch] = useReducer(appReducer, initialState);
 
+   useEffect(() =>{
+     async function load(){
+       const transactionResponse =  await (await fetchSampleData3())
+        const walletResponse = await ( await fetchSampleData2())
+        const identityResponse =   await ( await fetchSampleData1());
 
-  const { data: transactionResponse, isLoading: isLoadingReport } = useQuery(
-  [queryKeys.GET_TRANSACTION],
-  () =>
-    fetchSampleData3()
-    ,{
-       onSuccess : (data) =>{
+        setTransactions(transactionResponse)
+        setUser(identityResponse)
+        setWallets(walletResponse)
+
+        dispatch({
+          type: "GET_TRANSACTIONS",
+
+            transactions: transactionResponse
+
+        })
+        saveCachedData("transactions", transactionResponse)
+
+        dispatch(
+          {
+            type: "GET_BALANCE",
+             wallet: walletResponse
+
+          }
+        )
+         saveCachedData("wallet", walletResponse);
+
          dispatch({
-           type: "GET_TRANSACTIONS",
-
-             transactions: transactionResponse
-
-         })
-         saveCachedData("transactions", transactionResponse)
-       }
-    });
-
-  const { data: walletResponse, isLoading: isLoadingBalanceEnquiries } = useQuery(
-  [queryKeys.GET_WALLET],
-  () =>
-    fetchSampleData2()
-    ,{
-       onSuccess : () =>{
-         dispatch(
-           {
-             type: "GET_BALANCE",
-              wallet: walletResponse
-
-           }
-         )
-          saveCachedData("wallet", walletResponse)
-
-       }
-    });
-
-  const { data: identityResponse, isLoading: isLoadingIdentity } = useQuery(
-  [queryKeys.GET_USER],
-  () =>
-    fetchSampleData1()
-  ,{
-     onSuccess : () =>{
-       dispatch({
-            type: "GET_AUTH_PROFILE",
-              user: identityResponse,
-          })
-          saveCachedData("user", identityResponse)
+              type: "GET_AUTH_PROFILE",
+                user: identityResponse,
+            })
+            saveCachedData("user", identityResponse)
      }
-  });
-console.log(walletResponse)
+ load()
+   },[])
+
+
+
+
+
+
+
 
 
 
@@ -123,21 +119,21 @@ const defaultUser = {
         <Box className="index">
             <Box className="frame">
               <Box className="table-title">
-                <Box className="text-wrapper">{transactionResponse?.length} Transactions</Box>
+                <Box className="text-wrapper">{transactns?.length} Transactions</Box>
                 <p className="p">Your transactions for the last 7 days</p>
               </Box>
               <Filters />
            </Box>
-           <TransactionLists  transactions={transactionResponse}/>
-          <BalanceComponent  availableBalance={walletResponse?.balance}/>
+           <TransactionLists  transactions={transactns}/>
+          <BalanceComponent  availableBalance={wallets?.balance}/>
           <DateValues />
-          <VerticalInfoGrids wallet={walletResponse} />
+          <VerticalInfoGrids wallet={wallets} />
 
             {/*side bar*/}
             <SideBar />
 
             {/*nav*/}
-            <NavBar user={identityResponse}/>
+            <NavBar user={users}/>
         </Box>
       {/* </AppProvisioner>*/}
     </StyledWrapper>
