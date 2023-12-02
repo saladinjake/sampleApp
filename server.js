@@ -39,12 +39,12 @@ app.get('*', (req, res) => {
 //   //res.sendFile(path.resolve(__dirname, './build/index.html'));
 // });
 
-app.listen(PORT || 3000, function() {
+app.listen(PORT , function() {
   if (process.env.DYNO) {
     console.log('This service is only available on heroku..!!');
     // fs.closeSync(fs.openSync('/tmp/app-initialized', 'w'))
   }
-  console.log('Node app is running on port', process.env.PORT || 3000);
+  console.log('Node app is running on port', process.env.PORT ||PORT);
 });
 
 

@@ -2,7 +2,8 @@
   "name": "SampleApp",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://sample-app-git-master-saladinjake.vercel.app",
+  "homepage": ".",
+   "main": "server.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
@@ -44,7 +45,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "PORT=3000 react-scripts start",
+    "start": "react-scripts start",
     "start:windows": "SET PORT=3000 && react-scripts start",
     "storybook": "start-storybook -p 6006 -s public",
     "build": "react-scripts build",
